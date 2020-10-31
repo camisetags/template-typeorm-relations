@@ -1,12 +1,20 @@
 {
   "type": "postgres",
-  "host": "localhost",
-  "port": "5432",
-  "username": "postgres",
-  "password": "docker",
-  "database": "gostack_desafio09",
-  "entities": ["./src/modules/**/infra/typeorm/entities/*.ts"],
-  "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+  "host": "ec2-52-202-66-191.compute-1.amazonaws.com",
+  "port": 5432,
+  "username": "dpvwelmgjffvtl",
+  "password": "8a2ee73f347b079df3d5038a4eeaedc3a8216461f1aa1ec74021e36fa6aebca4",
+  "database": "d84jvjqu6e68rl",
+  "synchronize": true,
+  "extra": {
+    "ssl": true
+  },
+  "entities": [
+    "./src/modules/**/infra/typeorm/entities/*.ts"
+  ],
+  "migrations": [
+    "./src/shared/infra/typeorm/migrations/*.ts"
+  ],
   "cli": {
     "migrationsDir": "./src/shared/infra/typeorm/migrations"
   }
