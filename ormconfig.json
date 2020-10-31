@@ -6,8 +6,8 @@
   "password": "8a2ee73f347b079df3d5038a4eeaedc3a8216461f1aa1ec74021e36fa6aebca4",
   "database": "d84jvjqu6e68rl",
   "synchronize": true,
-  "extra": {
-    "ssl": true
+  "ssl": {
+    "rejectUnauthorized": false
   },
   "entities": [
     "./src/modules/**/infra/typeorm/entities/*.ts"
