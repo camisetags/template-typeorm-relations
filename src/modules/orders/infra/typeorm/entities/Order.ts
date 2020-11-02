@@ -12,7 +12,7 @@ import Customer from '@modules/customers/infra/typeorm/entities/Customer';
 import OrdersProducts from '@modules/orders/infra/typeorm/entities/OrdersProducts';
 
 @Entity('orders')
-export default class Order {
+class Order {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -31,3 +31,5 @@ export default class Order {
   @UpdateDateColumn()
   updated_at: Date;
 }
+
+export default Order;

@@ -1,14 +1,10 @@
 {
   "type": "postgres",
-  "host": "ec2-52-202-66-191.compute-1.amazonaws.com",
-  "port": 5432,
-  "username": "dpvwelmgjffvtl",
-  "password": "8a2ee73f347b079df3d5038a4eeaedc3a8216461f1aa1ec74021e36fa6aebca4",
-  "database": "d84jvjqu6e68rl",
-  "synchronize": true,
-  "ssl": {
-    "rejectUnauthorized": false
-  },
+  "host": "localhost",
+  "port": 54323,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "gostack",
   "entities": [
     "./src/modules/**/infra/typeorm/entities/*.ts"
   ],

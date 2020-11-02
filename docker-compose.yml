@@ -1,0 +1,29 @@
+version: "3.2"
+
+services:
+  database:
+    image: postgres:10.4
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "gostack"
+      PGDATA: "/var/lib/postgresql/data"
+      PGCLIENTENCODING: "UTF8"
+    volumes:
+      - ./psql_data:/var/lib/postgresql/data
+    ports:
+      - 54322:5432
+    # command: bash -c "psql -f /usr/share/postgresql/10.4/contrib/pg_trgm.sql"
+
+  database_test:
+    image: postgres:10.4
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "gostack_desafio09_tests"
+      PGDATA: "/var/lib/postgresql/data"
+      PGCLIENTENCODING: "UTF8"
+    volumes:
+      - ./psql_data_test:/var/lib/postgresql/data
+    ports:
+      - 54323:5432
